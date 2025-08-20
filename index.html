@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Byeonggwon Lee | Portfolio</title>
+  <meta name="description" content="3D Reconstruction, SLAM, Depth Estimation" />
+  <meta property="og:title" content="Byeonggwon Lee | Portfolio">
+  <meta property="og:description" content="3D Reconstruction, SLAM, Depth Estimation">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-preview.png">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <h1>Byeonggwon Lee</h1>
+    <p class="kicker">3D Reconstruction · SLAM · Depth Estimation</p>
+    <div class="links">
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn" href="#publications">Publications</a>
+      <a class="btn" href="#demos">Demos</a>
+      <a class="btn" href="#about">About</a>
+      <a class="btn" href="mailto:you@example.com">Contact</a>
+      <a class="btn" href="cv/Byeonggwon_Lee_CV.pdf">Download CV</a>
+    </div>
+  </header>
+
+  <nav class="top">
+    <div class="inner">
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#demos">Demos</a>
+      <a href="#tech">Tech Stack</a>
+      <a href="#talks">Talks & Awards</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Online 3D Gaussian Splatting SLAM</h3>
+          <p>Streaming RGB로 온라인 3D 모델링. 불확실성 기반 Novel View Selection으로 재구성 품질 향상.</p>
+          <ul class="clean">
+            <li>Approach: DROID-SLAM + MVS/Depth Fusion, Gaussian Splatting</li>
+            <li>Result: Indoor PSNR ↑ (placeholder%), 시각적 완성도 향상</li>
+          </ul>
+          <p><a href="#" target="_blank">Code</a> · <a href="#" target="_blank">Video</a> · <a href="#" target="_blank">Slides</a></p>
+          <div class="badges">
+            <span class="badge">Python</span><span class="badge">PyTorch</span><span class="badge">OpenCV</span><span class="badge">C++</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Drone-based Offline 3D Reconstruction</h3>
+          <p>COLMAP + OpenMVS 파이프라인으로 대규모 장면의 고해상도 모델 생성.</p>
+          <ul class="clean">
+            <li>Sparse: COLMAP SfM</li><li>Dense: OpenMVS Mesh + Texture</li>
+          </ul>
+          <p><a href="#" target="_blank">Report</a> · <a href="#" target="_blank">Demo</a></p>
+          <div class="badges">
+            <span class="badge">SfM</span><span class="badge">MVS</span><span class="badge">OpenGL</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="clean">
+        <li><strong>Paper Title Placeholder</strong>, Conference/Journal, Year. <a href="#" target="_blank">Paper</a> · <a href="#" target="_blank">BibTeX</a> · <a href="#" target="_blank">Project Page</a></li>
+        <li><strong>MVS-GS</strong>, IEEE Access, 2025. <a href="#" target="_blank">Paper</a></li>
+      </ul>
+    </section>
+
+    <section id="demos">
+      <h2>Demos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="assets/img/demo1.png" alt="Demo thumbnail" style="width:100%;border-radius:8px">
+          <p><a href="#" target="_blank">YouTube: Online 3DGS SLAM</a></p>
+        </div>
+        <div class="card">
+          <img src="assets/img/demo2.png" alt="Demo thumbnail" style="width:100%;border-radius:8px">
+          <p><a href="#" target="_blank">Drone Reconstruction Walkthrough</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <h2>Tech Stack</h2>
+      <div class="badges">
+        <span class="badge">Python</span><span class="badge">PyTorch</span><span class="badge">OpenCV</span>
+        <span class="badge">C++</span><span class="badge">Shell</span><span class="badge">OpenGL</span>
+        <span class="badge">COLMAP</span><span class="badge">OpenMVS</span>
+      </div>
+    </section>
+
+    <section id="talks">
+      <h2>Talks & Awards</h2>
+      <ul class="clean">
+        <li>Talk: Online 3DGS with Novel View Selection, 2025 — Slides/Poster</li>
+        <li>Award: Placeholder Award (if any)</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Monocular SLAM, MVS, depth estimation에 관심을 가지고 연구하고 있습니다. 실시간 온라인 모델링과 오프라인 고품질 재구성 모두를 다루며, 파이프라인 최적화와 시각화(OpenGL) 경험이 있습니다.</p>
+      <p>Contact: <a href="mailto:you@example.com">you@example.com</a> · <a href="https://github.com/username" target="_blank">GitHub</a> · <a href="#" target="_blank">Google Scholar</a></p>
+    </section>
+  </main>
+
+  <footer class="site">
+    © <span id="y"></span> Byeonggwon Lee · Hosted on GitHub Pages
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
