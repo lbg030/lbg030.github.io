@@ -38,18 +38,6 @@ header.hero {
   max-width: var(--w);
   margin: 48px auto 0;
   padding: 0 20px 24px;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.hero img.headshot {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.hero .intro {
-  flex: 1;
 }
 .hero h1 {
   margin: 0 0 10px;
