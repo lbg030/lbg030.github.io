@@ -1,126 +1,219 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Byeong Gwon Lee | Portfolio</title>
-  <meta name="description" content="3D Reconstruction, SLAM, Depth Estimation" />
-  <meta property="og:title" content="Byeong Gwon Lee | Portfolio">
-  <meta property="og:description" content="3D Reconstruction, SLAM, Depth Estimation">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-preview.png">
-  <link rel="icon" href="assets/img/favicon.png">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="hero" id="top">
-    <h1>Byeong Gwon Lee</h1>
-    <p class="kicker">3D Reconstruction · SLAM · Depth Estimation</p>
-    <div class="links">
-      <a class="btn" href="#projects">Projects</a>
-      <a class="btn" href="#publications">Publications</a>
-      <a class="btn" href="#demos">Demos</a>
-      <a class="btn" href="#about">About</a>
-      <a class="btn" href="mailto:lee971009@naver.com">Contact</a>
-      <a class="btn" href="cv/Byeonggwon_Lee_CV.pdf">Download CV</a>
-    </div>
-  </header>
-
-  <nav class="top">
-    <div class="inner">
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#demos">Demos</a>
-      <a href="#tech">Tech Stack</a>
-      <a href="#talks">Talks & Awards</a>
-      <a href="#about">About</a>
-    </div>
-  </nav>
-
-  <main>
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Online 3D Gaussian Splatting SLAM</h3>
-          <p>Online 3D modeling from RGB-only streams with uncertainty-driven novel view selection to improve completeness.</p>
-          <ul class="clean">
-            <li>Approach: DROID-SLAM + MVS/Depth Fusion, Gaussian Splatting</li>
-            <li>Result: Better completeness and fidelity in indoor/outdoor scenes</li>
-          </ul>
-          <p><a href="#" target="_blank">Code</a> · <a href="#" target="_blank">Video</a> · <a href="#" target="_blank">Slides</a></p>
-          <div class="badges">
-            <span class="badge">Python</span><span class="badge">PyTorch</span><span class="badge">OpenCV</span><span class="badge">C++</span>
-          </div>
-        </article>
-        <article class="card">
-          <h3>Drone-based Offline 3D Reconstruction</h3>
-          <p>High-res modeling pipeline on drone imagery.</p>
-          <ul class="clean">
-            <li>Sparse: COLMAP SfM</li><li>Dense: OpenMVS Mesh + Texture</li>
-          </ul>
-          <p><a href="#" target="_blank">Report</a> · <a href="#" target="_blank">Demo</a></p>
-          <div class="badges">
-            <span class="badge">SfM</span><span class="badge">MVS</span><span class="badge">OpenGL</span>
-          </div>
-        </article>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Byeong Gwon Lee | Portfolio</title>
+    <meta
+      name="description"
+      content="3D Reconstruction, SLAM, Depth Estimation"
+    />
+    <meta property="og:title" content="Byeong Gwon Lee | Portfolio" />
+    <meta
+      property="og:description"
+      content="3D Reconstruction, SLAM, Depth Estimation"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-preview.png" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAABcElEQVR4nO3OMQEAAAiAMKIb3RZy4BKMeSewAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlRgByqwAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlRgByqwAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlRgByqwAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlRgByqwAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlQsjXtk7TnU/swAAAAASUVORK5CYII="
+        alt="Headshot of Byeong Gwon Lee"
+        class="headshot"
+      />
+      <div class="intro">
+        <h1>Byeong Gwon Lee</h1>
+        <p class="kicker">3D Reconstruction · SLAM · Depth Estimation</p>
       </div>
-    </section>
+    </header>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul class="clean">
-        <li><strong>MVS-GS: High-Quality 3D Gaussian Splatting Mapping via Online Multi-View Stereo</strong>, IEEE Access, 2025. <a href="https://arxiv.org/abs/2412.19130" target="_blank">arXiv</a></li>
-        <li>
-          <strong>Online 3D Gaussian Splatting Modeling with Novel View Selection</strong>, IJCAI 2025. <a href="https://arxiv.org/abs/2508.14014" target="_blank">arXiv</a> ·
-          <a href="poster/IJCAI2025_Poster_v2.pdf" target="_blank">Poster (PDF)</a>
-        </li>
-      </ul>
-    </section>
+    <nav class="top">
+      <div class="inner">
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#projects-list">Project List</a>
+        <a href="mailto:lee971009@naver.com">Contact</a>
+      </div>
+    </nav>
 
-    <section id="demos">
-      <h2>Demos</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="assets/img/demo1.png" alt="Online 3DGS SLAM demo" style="width:100%;border-radius:8px">
-          <p><a href="#" target="_blank">YouTube: Online 3DGS SLAM</a></p>
+    <main>
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Real-time Drone 3D Reconstruction</h3>
+            <p>
+              Ongoing research generating 3D maps on the fly from aerial
+              imagery.
+            </p>
+            <ul class="clean">
+              <li>Multi-depth sampling for rapid scene capture</li>
+              <li>Built for mobility platforms and field robotics</li>
+              <li>Focus on low-latency processing</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Real-time</span><span class="badge">SLAM</span
+              ><span class="badge">Drones</span>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="assets/img/demo2.png"
+              alt="Drone reconstruction pipeline screenshot"
+            />
+            <h3>Offline 3D Reconstruction from Drone Imagery</h3>
+            <p>
+              A complete pipeline for high-resolution modeling from flight
+              planning to textured mesh output.
+            </p>
+            <ul class="clean">
+              <li>Sparse reconstruction with COLMAP SfM</li>
+              <li>Dense mesh and texture generation via OpenMVS</li>
+              <li>Flight path design for thorough coverage</li>
+              <li>Ground control points for geo-alignment</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">SfM</span><span class="badge">MVS</span
+              ><span class="badge">OpenGL</span>
+            </div>
+          </article>
         </div>
-        <div class="card">
-          <img src="assets/img/demo2.png" alt="Drone reconstruction demo" style="width:100%;border-radius:8px">
-          <p><a href="#" target="_blank">Drone Reconstruction Walkthrough</a></p>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul class="clean">
+          <li>
+            <strong
+              >MVS-GS: High-Quality 3D Gaussian Splatting Mapping via Online
+              Multi-View Stereo</strong
+            >, IEEE Access, 2025.
+            <a href="https://arxiv.org/abs/2412.19130" target="_blank">arXiv</a>
+          </li>
+          <li>
+            <strong
+              >Online 3D Gaussian Splatting Modeling with Novel View
+              Selection</strong
+            >, IJCAI 2025.
+            <a href="https://arxiv.org/abs/2508.14014" target="_blank">arXiv</a>
+            ·
+            <a href="poster/IJCAI2025_Poster_v2.pdf" target="_blank"
+              >Poster (PDF)</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="tech">
+        <h2>Tech Stack</h2>
+        <div class="badges">
+          <span class="badge">Python</span><span class="badge">PyTorch</span
+          ><span class="badge">OpenCV</span> <span class="badge">C++</span
+          ><span class="badge">Shell</span><span class="badge">Linux</span>
+          <span class="badge">OpenGL</span><span class="badge">COLMAP</span
+          ><span class="badge">OpenMVS</span>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="tech">
-      <h2>Tech Stack</h2>
-      <div class="badges">
-        <span class="badge">Python</span><span class="badge">PyTorch</span><span class="badge">OpenCV</span>
-        <span class="badge">C++</span><span class="badge">Shell</span><span class="badge">Linux</span>
-        <span class="badge">OpenGL</span><span class="badge">COLMAP</span><span class="badge">OpenMVS</span>
-      </div>
-    </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I'm a computer vision researcher and M.S. student at Dongguk
+          University focusing on monocular SLAM, multi-view stereo, and depth
+          estimation. My interests span both real-time online modeling and
+          high-quality offline reconstruction.
+        </p>
+        <p>
+          Previously I studied Software Engineering at Hanyang University and
+          spent time as a research intern and data scientist at AI Image, RTM. I
+          enjoy building practical 3D vision systems that bridge research and
+          field applications.
+        </p>
+        <p>
+          Contact:
+          <a href="mailto:lee971009@naver.com">lee971009@naver.com</a> ·
+          <a href="mailto:lbg030@dgu.ac.kr">lbg030@dgu.ac.kr</a> ·
+          <a href="https://github.com/lbg030" target="_blank">GitHub</a>
+        </p>
+      </section>
 
-    <section id="talks">
-      <h2>Talks & Awards</h2>
-      <ul class="clean">
-        <li>Talk: Online 3DGS with Novel View Selection (IJCAI 2025)</li>
-      </ul>
-    </section>
+      <section id="education">
+        <h2>Education</h2>
+        <ul class="clean">
+          <li>
+            <strong>Catholic Kwandong University</strong>, Department of
+            Broadcasting, Gangneung, Korea (Mar. 2016 – May 2017) – Dropped out,
+            GPA 3.688 / 4.5
+          </li>
+          <li>
+            <strong>Hanyang University</strong>, Division of Software, Ansan,
+            Korea (Mar. 2020 – Feb. 2024) – B.S. in Software Engineering,
+            Advisor: Sungui Park, GPA 3.68 / 4.5
+          </li>
+          <li>
+            <strong>Dongguk University</strong>, Dept. of Computer Science and
+            Artificial Intelligence, Seoul, Korea (Feb. 2024 – Present) – M.S.
+            Student, Advisor: Soohwan Song, GPA 4.5 / 4.5
+          </li>
+        </ul>
+      </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>I'm a computer vision researcher focusing on monocular SLAM, multi-view stereo, and depth estimation. I work on both real-time online modeling and high-quality offline reconstruction.</p>
-      <p>Contact: <a href="mailto:lee971009@naver.com">lee971009@naver.com</a> · <a href="mailto:lbg030@dgu.ac.kr">lbg030@dgu.ac.kr</a> · <a href="https://github.com/lbg030" target="_blank">GitHub</a></p>
-    </section>
-  </main>
+      <section id="research">
+        <h2>Research Experiences</h2>
+        <ul class="clean">
+          <li>
+            Research Intern at AI Image, RTM, Korea (Sep. 2022 – Dec. 2022) /
+            Intern
+          </li>
+          <li>
+            Researcher at AI Image, RTM, Korea (Jan. 2023 – Feb. 2024) / Data
+            Scientist
+          </li>
+          <li>
+            Research Student at Dept. of Computer Science and Artificial
+            Intelligence, Dongguk Univ., Korea (Feb. 2024 – Present) / Computer
+            Vision Researcher
+          </li>
+        </ul>
+      </section>
 
-  <footer class="site">
-    © <span id="y"></span> Byeong Gwon Lee · Hosted on GitHub Pages
-  </footer>
+      <section id="projects-list">
+        <h2>Projects</h2>
+        <ul class="clean">
+          <li>
+            Defect detection across multi-angle imagery of identical samples,
+            Daeduck Electronics, Korea (Apr. 2023 – Jun. 2023)
+          </li>
+          <li>
+            High-resolution cosmetic container defect inspection, Seobaujeok,
+            Korea (Mar. 2023 – Dec. 2023)
+          </li>
+          <li>
+            Multi-depth sampling for real-time 3D reconstruction using drones,
+            Mobility One Inc., Korea (Oct. 2024 – Present)
+          </li>
+          <li>
+            3D reconstruction from drone imagery, Mobility One Inc., Korea (Jun.
+            2025 – Present)
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
+    <footer class="site">
+      © <span id="y"></span> Byeong Gwon Lee · Hosted on GitHub Pages
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
