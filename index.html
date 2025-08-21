@@ -20,19 +20,65 @@
   </head>
   <body>
     <header class="hero" id="top">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAABcElEQVR4nO3OMQEAAAiAMKIb3RZy4BKMeSewAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlRgByqwAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlRgByqwAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlRgByqwAxXYgQrsQAV2oAI7UIEdqMAOVGAHKrADFdiBCuxABXagAjtQgR2owA5UYAcqsAMV2IEK7EAFdqACO1CBHajADlQsjXtk7TnU/swAAAAASUVORK5CYII="
+        alt="Headshot of Byeong Gwon Lee"
+        class="headshot"
+      />
+      <div class="intro">
+        <h1>Byeong Gwon Lee</h1>
+        <p class="kicker">3D Reconstruction · SLAM · Depth Estimation</p>
       </div>
     </header>
+
+    <nav class="top">
+      <div class="inner">
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#projects-list">Project List</a>
+        <a href="mailto:lee971009@naver.com">Contact</a>
+      </div>
+    </nav>
 
     <main>
       <section id="projects">
         <h2>Featured Projects</h2>
         <div class="grid">
           <article class="card">
+            <h3>Real-time Drone 3D Reconstruction</h3>
+            <p>
+              Ongoing research generating 3D maps on the fly from aerial
+              imagery.
+            </p>
+            <ul class="clean">
+              <li>Multi-depth sampling for rapid scene capture</li>
+              <li>Built for mobility platforms and field robotics</li>
+              <li>Focus on low-latency processing</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Real-time</span><span class="badge">SLAM</span
+              ><span class="badge">Drones</span>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="assets/img/demo2.png"
+              alt="Drone reconstruction pipeline screenshot"
+            />
+            <h3>Offline 3D Reconstruction from Drone Imagery</h3>
+            <p>
+              A complete pipeline for high-resolution modeling from flight
+              planning to textured mesh output.
             </p>
             <ul class="clean">
               <li>Sparse reconstruction with COLMAP SfM</li>
               <li>Dense mesh and texture generation via OpenMVS</li>
-              <li>Designed for large-scale outdoor scenes</li>
+              <li>Flight path design for thorough coverage</li>
+              <li>Ground control points for geo-alignment</li>
             </ul>
             <div class="badges">
               <span class="badge">SfM</span><span class="badge">MVS</span
@@ -109,6 +155,8 @@
           </li>
           <li>
             <strong>Hanyang University</strong>, Division of Software, Ansan,
+            Korea (Mar. 2020 – Feb. 2024) – B.S. in Software Engineering,
+            Advisor: Sungui Park, GPA 3.68 / 4.5
           </li>
           <li>
             <strong>Dongguk University</strong>, Dept. of Computer Science and
@@ -141,6 +189,20 @@
         <h2>Projects</h2>
         <ul class="clean">
           <li>
+            Defect detection across multi-angle imagery of identical samples,
+            Daeduck Electronics, Korea (Apr. 2023 – Jun. 2023)
+          </li>
+          <li>
+            High-resolution cosmetic container defect inspection, Seobaujeok,
+            Korea (Mar. 2023 – Dec. 2023)
+          </li>
+          <li>
+            Multi-depth sampling for real-time 3D reconstruction using drones,
+            Mobility One Inc., Korea (Oct. 2024 – Present)
+          </li>
+          <li>
+            3D reconstruction from drone imagery, Mobility One Inc., Korea (Jun.
+            2025 – Present)
           </li>
         </ul>
       </section>
