@@ -1,4 +1,4 @@
-# Portfolio (GitHub Pages)
+# GitHub
 
 This repository hosts lbg030.github.io — a lightweight **static HTML/CSS** portfolio.
 
