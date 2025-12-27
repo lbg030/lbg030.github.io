@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Byeong Gwon Lee</title>
+    <meta
+      name="description"
+      content="Projects in 3D reconstruction, SLAM, and applied computer vision."
+    />
+    <meta property="og:title" content="Projects — Byeong Gwon Lee" />
+    <meta
+      property="og:description"
+      content="Projects in 3D reconstruction, SLAM, and applied computer vision."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-preview.png" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="inner">
+        <a href="index.html#top">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="about.html">About</a>
+        <a href="index.html#tech">Tech Stack</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#research">Research</a>
+        <a href="mailto:lee971009@naver.com">Contact</a>
+      </div>
+    </nav>
+
+    <header class="page-hero">
+      <p class="hero-kicker">Projects</p>
+      <h1>3D Reconstruction Systems in Practice</h1>
+      <p>
+        I build end-to-end vision systems that balance real-time modeling with
+        high-fidelity reconstruction. These projects span academic research and
+        industry deployments in aerial surveying and robotics.
+      </p>
+      <div class="hero-meta">
+        <span>Real-time mapping</span>
+        <span>SLAM + MVS pipelines</span>
+        <span>Gaussian Splatting</span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="section-title">
+          Signature Projects
+          <span>Featured</span>
+        </h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Online/Offline Real-Time 3D Reconstruction Using Drone Imagery</h3>
+            <p>
+              Research on real-time and offline 3D reconstruction pipelines
+              utilizing drone-captured imagery.
+            </p>
+            <ul class="clean">
+              <li>Online modeling with SLAM + MVS integration</li>
+              <li>Offline high-quality reconstruction with extended processing</li>
+              <li>Optimized for aerial surveying and robotics</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Real-time</span>
+              <span class="badge">SLAM</span>
+              <span class="badge">MVS</span>
+              <span class="badge">Gaussian Splatting</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>3D Reconstruction with Diffusion-based Inpainting</h3>
+            <p>
+              A reconstruction pipeline that enhances drone-based 3D models by
+              filling unreconstructed regions using diffusion models.
+            </p>
+            <ul class="clean">
+              <li>Sparse structure from motion with COLMAP</li>
+              <li>Dense mesh & texture generation with OpenMVS</li>
+              <li>Diffusion-based inpainting for missing areas</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">SfM</span>
+              <span class="badge">MVS</span>
+              <span class="badge">Diffusion</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="split">
+        <div class="surface stack">
+          <h2>Project Focus</h2>
+          <p>
+            The core goal is reliable 3D modeling in the field. I focus on data
+            selection, reconstruction stability, and delivering outputs that can
+            be reused by robotics and inspection teams.
+          </p>
+          <div class="media-strip">
+            <span class="pill">Aerial reconstruction</span>
+            <span class="pill">Online mapping</span>
+            <span class="pill">Dense geometry</span>
+          </div>
+        </div>
+        <div class="surface">
+          <h2>Pipeline Milestones</h2>
+          <ul class="timeline">
+            <li>
+              <strong>Capture</strong>
+              Drone data acquisition with calibrated trajectories and overlap
+              planning.
+            </li>
+            <li>
+              <strong>Online Mapping</strong>
+              SLAM tracking and view selection for immediate modeling.
+            </li>
+            <li>
+              <strong>Offline Refinement</strong>
+              Multi-view stereo, denoising, and geometry completion.
+            </li>
+            <li>
+              <strong>Delivery</strong>
+              Compact models for inspection, simulation, and analytics.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">
+          Project List
+          <span>Industry & Research</span>
+        </h2>
+        <ul class="clean surface">
+          <li>
+            Defect detection across multi-angle imagery of identical samples,
+            Daeduck Electronics, Korea (Apr. 2023 – Jun. 2023)
+          </li>
+          <li>
+            High-resolution cosmetic container defect inspection, Seobaujeok,
+            Korea (Mar. 2023 – Dec. 2023)
+          </li>
+          <li>
+            Online/Offline Real-Time 3D Reconstruction Using Drone Imagery,
+            Mobility One Inc., Korea (Oct. 2024 – Apr. 2025)
+          </li>
+          <li>
+            3D Reconstruction from Drone Imagery with Diffusion-based Inpainting
+            of Unreconstructed Regions, Mobility One Inc., Korea (Jun. 2025 –
+            Dec. 2025)
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site">
+      © <span id="y"></span> Byeong Gwon Lee · Hosted on GitHub Pages
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

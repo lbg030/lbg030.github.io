@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications — Byeong Gwon Lee</title>
+    <meta
+      name="description"
+      content="Publications, posters, and presentations on 3D reconstruction and SLAM."
+    />
+    <meta property="og:title" content="Publications — Byeong Gwon Lee" />
+    <meta
+      property="og:description"
+      content="Publications, posters, and presentations on 3D reconstruction and SLAM."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-preview.png" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="inner">
+        <a href="index.html#top">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="about.html">About</a>
+        <a href="index.html#tech">Tech Stack</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#research">Research</a>
+        <a href="mailto:lee971009@naver.com">Contact</a>
+      </div>
+    </nav>
+
+    <header class="page-hero">
+      <p class="hero-kicker">Publications</p>
+      <h1>Research Outputs & Technical Notes</h1>
+      <p>
+        Papers, posters, and presentations covering online Gaussian Splatting,
+        depth estimation, and multi-view stereo. Reach out for collaborations or
+        full-text requests.
+      </p>
+      <div class="hero-meta">
+        <span>IEEE Access</span>
+        <span>IJCAI</span>
+        <span>MDPI Electronics</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="publication-grid">
+        <h2 class="section-title">
+          Journal & Conference
+          <span>Peer-reviewed</span>
+        </h2>
+
+        <article class="publication-card">
+          <span class="pill">IEEE Access · 2025</span>
+          <h3>
+            MVS-GS: High-Quality 3D Gaussian Splatting Mapping via Online
+            Multi-View Stereo
+          </h3>
+          <p>
+            Online mapping pipeline that maintains high-fidelity splatting while
+            keeping latency low for field deployment.
+          </p>
+          <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11050405" target="_blank"
+              >Paper</a
+            >
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <span class="pill">IJCAI · 2025</span>
+          <h3>Online 3D Gaussian Splatting Modeling with Novel View Selection</h3>
+          <p>
+            View selection strategy to stabilize online Gaussian Splatting while
+            preserving detail in complex scenes.
+          </p>
+          <div class="publication-links">
+            <a href="https://arxiv.org/abs/2508.14014" target="_blank">arXiv</a>
+            <a href="poster/IJCAI2025_Poster_v2.pdf" target="_blank">Poster</a>
+            <a
+              href="https://github.com/lbg030/lbg030.github.io/releases/download/Final/Montreal_Presentation_V4.pptx"
+              target="_blank"
+              >Presentation</a
+            >
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <span class="pill">MDPI Electronics · 2025</span>
+          <h3>
+            Stereo-GS: Online 3D Gaussian Splatting Mapping Using Stereo Depth
+            Estimation
+          </h3>
+          <p>
+            Stereo depth estimation for stable splatting and adaptive geometry
+            quality.
+          </p>
+          <div class="publication-links">
+            <a href="https://www.mdpi.com/2079-9292/14/22/4436" target="_blank"
+              >Paper</a
+            >
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <span class="pill">CVPR Submission · 2025</span>
+          <h3>
+            M2Depth: Unifying Monocular Depth Foundation Priors with Multi-View
+            Stereo
+          </h3>
+          <p>
+            Leveraging foundation priors to align monocular depth with multi-view
+            geometry across capture conditions.
+          </p>
+        </article>
+      </section>
+
+      <section class="split">
+        <div class="surface stack">
+          <h2>Research Themes</h2>
+          <p>
+            My recent work connects real-time mapping with high-quality
+            reconstruction, focusing on inference speed, view selection, and
+            geometry completion.
+          </p>
+          <div class="badges">
+            <span class="badge">Gaussian Splatting</span>
+            <span class="badge">Depth Estimation</span>
+            <span class="badge">Multi-view Stereo</span>
+            <span class="badge">Online Mapping</span>
+          </div>
+        </div>
+        <div class="surface">
+          <h2>Quick Links</h2>
+          <p>
+            For a full record, check Google Scholar or connect for preprints and
+            datasets.
+          </p>
+          <div class="media-strip">
+            <a href="https://scholar.google.co.kr/citations?user=VLyJXToAAAAJ&hl" target="_blank"
+              >Google Scholar</a
+            >
+            <a href="https://github.com/lbg030" target="_blank">GitHub</a>
+            <a href="mailto:lbg030@dgu.ac.kr">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      © <span id="y"></span> Byeong Gwon Lee · Hosted on GitHub Pages
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

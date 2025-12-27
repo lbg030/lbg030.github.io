@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Byeong Gwon Lee</title>
+    <meta
+      name="description"
+      content="About Byeong Gwon Lee, research focus, and collaboration details."
+    />
+    <meta property="og:title" content="About — Byeong Gwon Lee" />
+    <meta
+      property="og:description"
+      content="About Byeong Gwon Lee, research focus, and collaboration details."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-preview.png" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="inner">
+        <a href="index.html#top">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="about.html">About</a>
+        <a href="index.html#tech">Tech Stack</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#research">Research</a>
+        <a href="mailto:lee971009@naver.com">Contact</a>
+      </div>
+    </nav>
+
+    <header class="page-hero">
+      <p class="hero-kicker">About</p>
+      <h1>Building Practical 3D Vision Systems</h1>
+      <p>
+        I'm a computer vision researcher and M.S. student at Dongguk University.
+        My work focuses on monocular SLAM, multi-view stereo, and depth
+        estimation, with a goal of deploying robust 3D modeling in real-world
+        environments.
+      </p>
+      <div class="hero-meta">
+        <span>Dongguk University</span>
+        <span>Computer Vision</span>
+        <span>3D Reconstruction</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="split">
+        <div class="surface stack">
+          <h2>Research Focus</h2>
+          <p>
+            I explore how to bridge real-time modeling and high-quality offline
+            reconstruction. Recent efforts include novel view selection for
+            Gaussian Splatting and diffusion-based inpainting for missing
+            geometry.
+          </p>
+          <p>
+            Previously, I studied Software Engineering at Hanyang University and
+            worked as a research intern and data scientist at AI Image, RTM.
+          </p>
+          <div class="media-strip">
+            <span class="pill">SLAM</span>
+            <span class="pill">Depth Estimation</span>
+            <span class="pill">Multi-view Stereo</span>
+          </div>
+        </div>
+        <div class="surface">
+          <h2>Education Snapshot</h2>
+          <ul class="timeline">
+            <li>
+              <strong>Dongguk University</strong>
+              M.S. in Computer Science and AI (Feb. 2024 – Present)
+            </li>
+            <li>
+              <strong>Hanyang University</strong>
+              B.S. in Software Engineering (Mar. 2020 – Feb. 2023)
+            </li>
+            <li>
+              <strong>Catholic Kwandong University</strong>
+              Broadcasting Dept. (Mar. 2016 – May 2017)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">
+          Connect
+          <span>Collaboration</span>
+        </h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h4>Email</h4>
+            <p>
+              <a href="mailto:lee971009@naver.com">lee971009@naver.com</a><br />
+              <a href="mailto:lbg030@dgu.ac.kr">lbg030@dgu.ac.kr</a>
+            </p>
+          </div>
+          <div class="contact-card">
+            <h4>Profiles</h4>
+            <p>
+              <a href="https://github.com/lbg030" target="_blank">GitHub</a><br />
+              <a
+                href="https://www.linkedin.com/in/%EB%B3%91%EA%B6%8C-%EC%9D%B4-3a2b5133b/"
+                target="_blank"
+                >LinkedIn</a
+              ><br />
+              <a
+                href="https://scholar.google.co.kr/citations?user=VLyJXToAAAAJ&hl"
+                target="_blank"
+                >Google Scholar</a
+              >
+            </p>
+          </div>
+          <div class="contact-card">
+            <h4>Location</h4>
+            <p>Seoul, Korea · Open to research collaboration</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      © <span id="y"></span> Byeong Gwon Lee · Hosted on GitHub Pages
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
