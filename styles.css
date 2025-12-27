@@ -38,8 +38,12 @@ h3 {
 }
 
 .amp {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
+  font-family:
+    "Noto Sans KR",
+    "Noto Sans",
+    "Apple SD Gothic Neo",
+    sans-serif;
+  font-weight: 600;
 }
 header.hero {
   max-width: var(--w);
@@ -141,6 +145,10 @@ h2 {
   gap: 14px;
 }
 .grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid.grid-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .card {
@@ -380,6 +388,10 @@ ul.clean {
   border-radius: 12px;
   border: 1px solid rgba(15, 76, 92, 0.18);
   background: #f3efe8;
+}
+
+.media-thumb--cover {
+  object-fit: cover;
 }
 
 .media-body h3 {
