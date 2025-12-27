@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -39,97 +39,119 @@
 
     <nav class="top">
       <div class="inner">
-        <a href="index.html#top">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="about.html">About</a>
-        <a href="#tech">Tech Stack</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="mailto:lee971009@naver.com">Contact</a>
+        <a class="nav-brand" href="index.html#top">Byeong Gwon Lee</a>
+        <div class="nav-links">
+          <a href="index.html#top">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+          <a
+            class="cta-link"
+            href="cv/Lee_Byeonggwon_Portfolio_final.pdf"
+            target="_blank"
+            >Portfolio</a
+          >
+          <a href="cv/Byeonggwon_Lee_CV.pdf" target="_blank">CV</a>
+          <a href="mailto:lee971009@naver.com">Contact</a>
+        </div>
       </div>
     </nav>
 
     <main>
-      <section id="explore">
-        <h2>Explore</h2>
-        <div class="link-grid">
-          <a class="link-card" href="projects.html">
-            <h3>Projects</h3>
+      <section id="about">
+        <h2>About</h2>
+        <div class="split">
+          <div class="surface stack">
             <p>
-              Dive into end-to-end 3D reconstruction systems, SLAM pipelines,
-              and applied vision work across industry partnerships.
+              I'm a computer vision researcher and M.S. student at Dongguk
+              University focusing on monocular SLAM, multi-view stereo, and depth
+              estimation. My interests span both real-time online modeling and
+              high-quality offline reconstruction.
             </p>
-            <span class="link-cta">View projects</span>
-          </a>
-          <a class="link-card" href="publications.html">
-            <h3>Publications</h3>
             <p>
-              Read papers, posters, and presentations focused on Gaussian
-              Splatting, depth estimation, and multi-view stereo.
+              Previously I studied Software Engineering at Hanyang University and
+              worked as a research intern and data scientist at AI Image, RTM. I
+              enjoy building practical 3D vision systems that bridge research and
+              field applications.
             </p>
-            <span class="link-cta">Read publications</span>
-          </a>
-          <a class="link-card" href="about.html">
-            <h3>About</h3>
+            <div class="media-strip">
+              <a
+                href="cv/Lee_Byeonggwon_Portfolio_final.pdf"
+                target="_blank"
+                >Portfolio PDF</a
+              >
+              <a href="cv/Byeonggwon_Lee_CV.pdf" target="_blank">CV</a>
+              <a href="mailto:lee971009@naver.com">Email</a>
+            </div>
+          </div>
+          <div class="surface stack">
+            <h3>Profiles</h3>
             <p>
-              Learn about my research interests, current focus, and how to
-              connect for collaboration.
+              <a href="https://github.com/lbg030" target="_blank">GitHub</a><br />
+              <a
+                href="https://www.linkedin.com/in/%EB%B3%91%EA%B6%8C-%EC%9D%B4-3a2b5133b/"
+                target="_blank"
+                >LinkedIn</a
+              ><br />
+              <a
+                href="https://scholar.google.co.kr/citations?user=VLyJXToAAAAJ&hl"
+                target="_blank"
+                >Google Scholar</a
+              >
             </p>
-            <span class="link-cta">About me</span>
-          </a>
+            <h3>Contact</h3>
+            <p>
+              <a href="mailto:lee971009@naver.com">lee971009@naver.com</a><br />
+              <a href="mailto:lbg030@dgu.ac.kr">lbg030@dgu.ac.kr</a>
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="tech">
-        <h2>Tech Stack</h2>
-        <div class="badges">
-          <span class="badge">Python</span><span class="badge">PyTorch</span>
-          <span class="badge">C</span><span class="badge">C++</span>
-          <span class="badge">Shell</span><span class="badge">Linux</span>
-          <span class="badge">CUDA</span>
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Tech Stack</h3>
+            <div class="badges">
+              <span class="badge">Python</span><span class="badge">PyTorch</span>
+              <span class="badge">C</span><span class="badge">C++</span>
+              <span class="badge">Shell</span><span class="badge">Linux</span>
+              <span class="badge">CUDA</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Education</h3>
+            <ul class="clean">
+              <li>
+                <strong>Dongguk University</strong>, M.S. in Computer Science and
+                AI (Feb. 2024 – Present)
+              </li>
+              <li>
+                <strong>Hanyang University</strong>, B.S. in Software Engineering
+                (Mar. 2020 – Feb. 2023)
+              </li>
+              <li>
+                <strong>Catholic Kwandong University</strong>, Broadcasting Dept.
+                (Mar. 2016 – May 2017)
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Research Experience</h3>
+            <ul class="clean">
+              <li>
+                Research Intern at AI Image, RTM, Korea (Sep. 2022 – Dec. 2022)
+              </li>
+              <li>
+                Researcher at AI Image, RTM, Korea (Jan. 2023 – Feb. 2024)
+              </li>
+              <li>
+                Research Student at Dongguk Univ., Korea (Feb. 2024 – Present)
+              </li>
+            </ul>
+          </article>
         </div>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-        <ul class="clean">
-          <li>
-            <strong>Catholic Kwandong University</strong>, Department of
-            Broadcasting, Gangneung, Korea (Mar. 2016 – May 2017) – Dropped out,
-            GPA 3.688 / 4.5
-          </li>
-          <li>
-            <strong>Hanyang University</strong>, Division of Software, Ansan,
-            Korea (Mar. 2020 – Feb. 2023) – B.S. in Software Engineering,
-            GPA 3.68 / 4.5
-          </li>
-          <li>
-            <strong>Dongguk University</strong>, Dept. of Computer Science and
-            Artificial Intelligence, Seoul, Korea (Feb. 2024 – Present) – M.S.
-            Student, Advisor: Soohwan Song, GPA 4.5 / 4.5 ·
-            <a href="ppt/Thesis.pptx" target="_blank">Thesis PPT</a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="research">
-        <h2>Research Experiences</h2>
-        <ul class="clean">
-          <li>
-            Research Intern at AI Image, RTM, Korea (Sep. 2022 – Dec. 2022) /
-            Intern
-          </li>
-          <li>
-            Researcher at AI Image, RTM, Korea (Jan. 2023 – Feb. 2024) / Data
-            Scientist
-          </li>
-          <li>
-            Research Student at Dept. of Computer Science and Artificial
-            Intelligence, Dongguk Univ., Korea (Feb. 2024 – Present) / Computer
-            Vision Researcher
-          </li>
-        </ul>
       </section>
 
     </main>
