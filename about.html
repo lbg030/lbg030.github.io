@@ -6,31 +6,25 @@
     <title>About — Byeong Gwon Lee</title>
     <meta
       name="description"
-      content="About Byeong Gwon Lee, research focus, and collaboration details."
+      content="Research focus, collaboration areas, and contact details for Byeong Gwon Lee."
     />
     <meta property="og:title" content="About — Byeong Gwon Lee" />
     <meta
       property="og:description"
-      content="About Byeong Gwon Lee, research focus, and collaboration details."
+      content="Research focus and collaboration interests in 3D vision systems."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/img/og-preview.png" />
     <link rel="icon" href="assets/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="top">
       <div class="inner">
         <a class="nav-brand" href="index.html#top">Byeong Gwon Lee</a>
-        <div class="nav-links">
+        <div class="nav-links" aria-label="Primary navigation">
           <a href="index.html#top">Home</a>
-          <a href="about.html">About</a>
+          <a href="about.html" aria-current="page">About</a>
           <a href="projects.html">Projects</a>
           <a href="publications.html">Publications</a>
           <a href="mailto:lee971009@naver.com">Contact</a>
@@ -39,94 +33,96 @@
     </nav>
 
     <header class="page-hero">
-      <p class="hero-kicker">About</p>
-      <h1>Research Directions <span class="amp">&amp;</span> Collaboration</h1>
-      <p>
-        I focus on research that turns 3D vision into deployable systems.
-      </p>
-      <div class="hero-meta">
-        <span>Computer Vision</span>
-        <span>3D Reconstruction</span>
-        <span>Applied Research</span>
+      <div class="hero-shell stack">
+        <p class="hero-kicker">About</p>
+        <h1>Collaboration Scope and Research Topics</h1>
+        <p>
+          I work on deployable 3D vision systems for mapping, reconstruction,
+          and quality-focused geometric outputs.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:lee971009@naver.com">Contact by Email</a>
+          <a class="btn btn-secondary" href="publications.html">View Publications</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="split">
-        <div class="surface stack">
-          <h2>Research Themes</h2>
-          <p>
-            Core direction: stable online mapping with reliable offline quality.
-          </p>
-          <ul class="clean">
-            <li>Online Gaussian Splatting with adaptive view selection</li>
-            <li>Depth estimation that scales across diverse capture setups</li>
-            <li>Geometry completion with diffusion-based inpainting</li>
-          </ul>
-          <div class="media-strip">
-            <span class="pill">SLAM</span>
-            <span class="pill">Depth Estimation</span>
-            <span class="pill">Multi-view Stereo</span>
-          </div>
-        </div>
-        <div class="surface">
-          <h2>Collaboration Interests</h2>
-          <p>
-            Best fit: projects that need field-ready 3D modeling.
-          </p>
-          <ul class="clean">
-            <li>Real-time mapping for robotics and drones</li>
-            <li>High-quality reconstruction for inspection and analytics</li>
-            <li>Dataset creation and evaluation protocols</li>
-          </ul>
-        </div>
-      </section>
-
       <section>
-        <h2 class="section-title">
-          Resources
-          <span>Downloads</span>
-        </h2>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h4>Portfolio</h4>
-            <p>
-              <a href="cv/Lee_Byeonggwon_Portfolio_final.pdf" target="_blank"
-                >Portfolio PDF</a
-              >
-            </p>
-          </div>
-          <div class="contact-card">
-            <h4>Curriculum Vitae</h4>
-            <p><a href="cv/cv.pdf" target="_blank">CV (PDF)</a></p>
-          </div>
-          <div class="contact-card">
-            <h4>Contact</h4>
+        <div class="section-header">
+          <h2>Collaboration and Interests</h2>
+          <p class="section-subtitle">Current areas, technical interests, and workflow.</p>
+        </div>
+
+        <div class="cards-2">
+          <article class="card stack">
+            <span class="chip">Collaboration</span>
+            <h3>Collaboration Areas</h3>
+            <ul class="clean">
+              <li>Real-time mapping for robotics and drone platforms</li>
+              <li>High-quality 3D reconstruction for inspection workflows</li>
+              <li>Dataset design and evaluation protocols for 3D vision</li>
+            </ul>
+          </article>
+
+          <article class="card stack">
+            <span class="chip">Research</span>
+            <h3>Current Interests</h3>
+            <ul class="clean">
+              <li>Online Gaussian Splatting with adaptive view management</li>
+              <li>Depth estimation under sparse and noisy viewpoints</li>
+              <li>Offline refinement and geometry completion</li>
+            </ul>
+          </article>
+
+          <article class="card stack">
+            <span class="chip">Workflow</span>
+            <h3>How I Work</h3>
+            <ul class="clean">
+              <li>Define runtime, sensor, and quality constraints first</li>
+              <li>Build a reproducible baseline, then optimize robustness</li>
+              <li>Share experiment logs with failures and next steps</li>
+            </ul>
+          </article>
+
+          <article class="card stack">
+            <span class="chip">Contact</span>
+            <h3>Profiles and Documents</h3>
             <p>
               <a href="mailto:lee971009@naver.com">lee971009@naver.com</a><br />
               <a href="mailto:lbg030@dgu.ac.kr">lbg030@dgu.ac.kr</a>
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">
-          Profiles
-          <span>Online</span>
-        </h2>
-        <div class="media-strip">
-          <a href="https://github.com/lbg030" target="_blank">GitHub</a>
-          <a
-            href="https://www.linkedin.com/in/%EB%B3%91%EA%B6%8C-%EC%9D%B4-3a2b5133b/"
-            target="_blank"
-            >LinkedIn</a
-          >
-          <a
-            href="https://scholar.google.co.kr/citations?user=VLyJXToAAAAJ&hl"
-            target="_blank"
-            >Google Scholar</a
-          >
+            <div class="media-strip">
+              <a
+                class="btn btn-secondary"
+                href="cv/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CV (PDF)</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="cv/Lee_Byeonggwon_Portfolio_final.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portfolio</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://scholar.google.co.kr/citations?user=VLyJXToAAAAJ&hl"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Scholar</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://github.com/lbg030"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </article>
         </div>
       </section>
     </main>

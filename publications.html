@@ -6,178 +6,238 @@
     <title>Publications — Byeong Gwon Lee</title>
     <meta
       name="description"
-      content="Publications, posters, and presentations on 3D reconstruction and SLAM."
+      content="Publications and research materials in 3D reconstruction, Gaussian Splatting, and depth estimation."
     />
     <meta property="og:title" content="Publications — Byeong Gwon Lee" />
     <meta
       property="og:description"
-      content="Publications, posters, and presentations on 3D reconstruction and SLAM."
+      content="Publication records organized by year, venue, and type."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/img/og-preview.png" />
     <link rel="icon" href="assets/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="top">
       <div class="inner">
         <a class="nav-brand" href="index.html#top">Byeong Gwon Lee</a>
-        <div class="nav-links">
+        <div class="nav-links" aria-label="Primary navigation">
           <a href="index.html#top">Home</a>
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
-          <a href="publications.html">Publications</a>
+          <a href="publications.html" aria-current="page">Publications</a>
           <a href="mailto:lee971009@naver.com">Contact</a>
         </div>
       </div>
     </nav>
 
     <header class="page-hero">
-      <p class="hero-kicker">Publications</p>
-      <h1>Research Outputs <span class="amp">&amp;</span> Technical Notes</h1>
-      <p>
-        Papers and materials on online Gaussian Splatting, depth estimation, and
-        multi-view stereo. Contact me for collaboration or full-text requests.
-      </p>
-      <div class="hero-meta">
-        <span>IEEE Access</span>
-        <span>IJCAI</span>
-        <span>MDPI Electronics</span>
+      <div class="hero-shell stack">
+        <p class="hero-kicker">Publications</p>
+        <h1>Journal, Conference, and Submission Records</h1>
+        <p>
+          Publications on online mapping, Gaussian Splatting, depth estimation,
+          and multi-view stereo.
+        </p>
+        <div class="hero-meta">
+          <span class="chip">Year: 2025</span>
+          <span class="chip">Journal: 2</span>
+          <span class="chip">Conference: 1</span>
+          <span class="chip">Submission: 1</span>
+        </div>
       </div>
     </header>
 
     <main>
       <section>
-        <h2 class="section-title">
-          Journal <span class="amp">&amp;</span> Conference
-          <span>Peer-reviewed</span>
-        </h2>
-        <div class="media-list">
-          <article class="media-card">
+        <div class="section-header">
+          <h2>2025 Publications</h2>
+          <p class="section-subtitle">Each entry includes venue, year, authors, summary, and links.</p>
+        </div>
+
+        <div class="pub-list">
+          <article class="pub-card">
             <img
-              class="media-thumb media-thumb--cover"
+              class="pub-thumb"
               src="assets/img/mvs-gs-thumbnail.png"
               alt="MVS-GS paper thumbnail"
             />
-            <div class="media-body">
-              <p class="media-kicker">(2025) IEEE Access</p>
+            <div class="pub-main">
+              <div class="pub-meta">
+                <span class="chip">Journal</span>
+                <span class="pub-venue">IEEE Access</span>
+                <span class="pub-year">2025</span>
+              </div>
               <h3>
                 MVS-GS: High-Quality 3D Gaussian Splatting Mapping via Online
                 Multi-View Stereo
               </h3>
-          <p>
-            Online mapping pipeline that balances detail with real-time latency.
-          </p>
-              <div class="media-links">
+              <p class="pub-authors">Authors: Byeong Gwon Lee, et al.</p>
+              <p class="pub-summary">
+                Online mapping pipeline designed to preserve geometric quality while
+                maintaining practical runtime.
+              </p>
+              <div class="pub-links">
                 <a
+                  class="btn btn-secondary"
                   href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11050405"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >Paper</a
                 >
+                <a
+                  class="btn btn-secondary"
+                  href="assets/demo_video/demo_video_mvsgs.mp4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo video</a
+                >
               </div>
+              <video class="pub-demo" controls preload="metadata">
+                <source src="assets/demo_video/demo_video_mvsgs.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </article>
 
-          <article class="media-card">
+          <article class="pub-card">
             <img
-              class="media-thumb media-thumb--cover"
+              class="pub-thumb"
               src="assets/img/ijcai-thumbnail.png"
               alt="Online 3D Gaussian Splatting paper thumbnail"
             />
-            <div class="media-body">
-              <p class="media-kicker">(2025) IJCAI</p>
+            <div class="pub-main">
+              <div class="pub-meta">
+                <span class="chip">Conference</span>
+                <span class="pub-venue">IJCAI</span>
+                <span class="pub-year">2025</span>
+              </div>
               <h3>Online 3D Gaussian Splatting Modeling with Novel View Selection</h3>
-          <p>
-            View selection that stabilizes online splatting without losing detail.
-          </p>
-              <div class="media-links">
-                <a href="https://arxiv.org/abs/2508.14014" target="_blank">arXiv</a>
-                <a href="poster/IJCAI2025_Poster_v2.pdf" target="_blank">Poster</a>
+              <p class="pub-authors">Authors: Byeong Gwon Lee, et al.</p>
+              <p class="pub-summary">
+                View selection strategy for stable online splatting under constrained
+                capture conditions.
+              </p>
+              <div class="pub-links">
                 <a
+                  class="btn btn-secondary"
+                  href="https://arxiv.org/abs/2508.14014"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >arXiv</a
+                >
+                <a
+                  class="btn btn-secondary"
+                  href="poster/IJCAI2025_Poster_v2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Poster</a
+                >
+                <a
+                  class="btn btn-secondary"
                   href="https://github.com/lbg030/lbg030.github.io/releases/download/Final/Montreal_Presentation_V4.pptx"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >Presentation</a
                 >
+                <a
+                  class="btn btn-secondary"
+                  href="assets/demo_video/demo_video_ijcai.mp4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo video</a
+                >
               </div>
+              <video class="pub-demo" controls preload="metadata">
+                <source src="assets/demo_video/demo_video_ijcai.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </article>
 
-          <article class="media-card">
+          <article class="pub-card">
             <img
-              class="media-thumb media-thumb--cover"
+              class="pub-thumb"
               src="assets/img/stereo-gs-thumbnail.png"
               alt="Stereo-GS paper thumbnail"
             />
-            <div class="media-body">
-              <p class="media-kicker">(2025) MDPI Electronics</p>
+            <div class="pub-main">
+              <div class="pub-meta">
+                <span class="chip">Journal</span>
+                <span class="pub-venue">MDPI Electronics</span>
+                <span class="pub-year">2025</span>
+              </div>
               <h3>
                 Stereo-GS: Online 3D Gaussian Splatting Mapping Using Stereo Depth
                 Estimation
               </h3>
-          <p>
-            Stereo depth estimation for stable splatting and adaptive geometry.
-          </p>
-              <div class="media-links">
-                <a href="https://www.mdpi.com/2079-9292/14/22/4436" target="_blank"
+              <p class="pub-authors">Authors: Byeong Gwon Lee, et al.</p>
+              <p class="pub-summary">
+                Stereo depth integration for improved mapping stability and detail
+                consistency.
+              </p>
+              <div class="pub-links">
+                <a
+                  class="btn btn-secondary"
+                  href="https://www.mdpi.com/2079-9292/14/22/4436"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Paper</a
                 >
               </div>
             </div>
           </article>
 
-          <article class="media-card">
+          <article class="pub-card">
             <img
-              class="media-thumb media-thumb--cover"
+              class="pub-thumb"
               src="assets/img/M2depth_thumbnail.png"
               alt="M2Depth paper thumbnail"
             />
-            <div class="media-body">
-              <p class="media-kicker">(2025) CVPR Submission</p>
+            <div class="pub-main">
+              <div class="pub-meta">
+                <span class="chip">Submission</span>
+                <span class="pub-venue">CVPR (under review)</span>
+                <span class="pub-year">2025</span>
+              </div>
               <h3>
-                M2Depth: Unifying Monocular Depth Foundation Priors with Multi-View
-                Stereo
+                M2Depth: Unifying Monocular Depth Foundation Priors with
+                Multi-View Stereo
               </h3>
-          <p>
-            Aligning monocular priors with multi-view geometry across conditions.
-          </p>
+              <p class="pub-authors">Authors: Byeong Gwon Lee, et al.</p>
+              <p class="pub-summary">
+                Framework that combines monocular depth priors with multi-view
+                geometry for robust reconstruction.
+              </p>
+              <p>No public manuscript link is available.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="split">
-        <div class="surface stack">
-          <h2>Research Themes</h2>
-          <p>
-            My recent work connects real-time mapping with high-quality
-            reconstruction, focusing on inference speed, view selection, and
-            geometry completion.
-          </p>
-          <div class="badges">
-            <span class="badge">Gaussian Splatting</span>
-            <span class="badge">Depth Estimation</span>
-            <span class="badge">Multi-view Stereo</span>
-            <span class="badge">Online Mapping</span>
-          </div>
+      <section>
+        <div class="section-header">
+          <h2>Author Profiles</h2>
+          <p class="section-subtitle">External profiles and contact channels.</p>
         </div>
-        <div class="surface">
-          <h2>Quick Links</h2>
-          <p>
-            For a full record, check Google Scholar or connect for preprints and
-            datasets.
-          </p>
+        <div class="surface stack">
           <div class="media-strip">
-            <a href="https://scholar.google.co.kr/citations?user=VLyJXToAAAAJ&hl" target="_blank"
+            <a
+              class="btn btn-secondary"
+              href="https://scholar.google.co.kr/citations?user=VLyJXToAAAAJ&hl"
+              target="_blank"
+              rel="noopener noreferrer"
               >Google Scholar</a
             >
-            <a href="https://github.com/lbg030" target="_blank">GitHub</a>
-            <a href="mailto:lbg030@dgu.ac.kr">Email</a>
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/lbg030"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a class="btn btn-primary" href="mailto:lbg030@dgu.ac.kr">Email</a>
           </div>
         </div>
       </section>
