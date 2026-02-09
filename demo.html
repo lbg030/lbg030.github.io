@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo — Byeong Gwon Lee</title>
+    <meta name="description" content="Publication demo video playback." />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="inner">
+        <a class="nav-brand" href="index.html#top">Byeong Gwon Lee</a>
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="publications.html">Publications</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="demo-main">
+      <section class="surface stack demo-panel">
+        <p class="hero-kicker">Publication Demo</p>
+        <h1 id="demo-title">Loading demo...</h1>
+        <p id="demo-message" class="section-subtitle"></p>
+        <video
+          id="demo-video"
+          class="demo-player"
+          controls
+          autoplay
+          muted
+          playsinline
+          preload="metadata"
+        ></video>
+        <a class="btn btn-secondary" href="publications.html">← Back to Publications</a>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        const demos = {
+          mvsgs: {
+            title: "Demo: MVS-GS",
+            src: "assets/demo_video/demo_video_mvsgs.mp4",
+          },
+          ijcai: {
+            title: "Demo: IJCAI Online 3D Gaussian Splatting",
+            src: "assets/demo_video/demo_video_ijcai.mp4",
+          },
+        };
+
+        const key = new URLSearchParams(window.location.search).get("v");
+        const titleEl = document.getElementById("demo-title");
+        const messageEl = document.getElementById("demo-message");
+        const videoEl = document.getElementById("demo-video");
+
+        if (!key || !demos[key]) {
+          titleEl.textContent = "Demo not found";
+          messageEl.textContent =
+            "The requested demo is unavailable. Use the link below to return.";
+          videoEl.remove();
+          return;
+        }
+
+        const demo = demos[key];
+        document.title = demo.title + " — Byeong Gwon Lee";
+        titleEl.textContent = demo.title;
+        messageEl.textContent = "Local demo video playback.";
+        videoEl.src = demo.src;
+        videoEl.setAttribute("aria-label", demo.title);
+      })();
+    </script>
+  </body>
+</html>

@@ -18,7 +18,7 @@
     <link rel="icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="publications-page">
     <nav class="top">
       <div class="inner">
         <a class="nav-brand" href="index.html#top">Byeong Gwon Lee</a>
@@ -27,7 +27,7 @@
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="publications.html" aria-current="page">Publications</a>
-          <a href="mailto:lee971009@naver.com">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -41,7 +41,7 @@
           and multi-view stereo.
         </p>
         <div class="hero-meta">
-          <span class="chip">Year: 2025</span>
+          <span class="chip">Years: 2025-2026</span>
           <span class="chip">Journal: 2</span>
           <span class="chip">Conference: 1</span>
           <span class="chip">Submission: 1</span>
@@ -52,22 +52,31 @@
     <main>
       <section>
         <div class="section-header">
-          <h2>2025 Publications</h2>
+          <h2>Publications and Submissions</h2>
           <p class="section-subtitle">Each entry includes venue, year, authors, summary, and links.</p>
         </div>
 
         <div class="pub-list">
           <article class="pub-card">
-            <img
-              class="pub-thumb"
-              src="assets/img/mvs-gs-thumbnail.png"
-              alt="MVS-GS paper thumbnail"
-            />
+            <button
+              class="pub-thumb-btn"
+              type="button"
+              data-full="assets/img/mvs-gs-thumbnail.png"
+              data-alt="MVS-GS paper thumbnail"
+              data-cap="MVS-GS: High-Quality 3D Gaussian Splatting Mapping via Online Multi-View Stereo"
+            >
+              <img
+                class="pub-thumb"
+                src="assets/img/mvs-gs-thumbnail.png"
+                alt="MVS-GS paper thumbnail"
+              />
+            </button>
             <div class="pub-main">
               <div class="pub-meta">
                 <span class="chip">Journal</span>
                 <span class="pub-venue">IEEE Access</span>
                 <span class="pub-year">2025</span>
+                <span class="role-badge">First Author</span>
               </div>
               <h3>
                 MVS-GS: High-Quality 3D Gaussian Splatting Mapping via Online
@@ -87,31 +96,34 @@
                   >Paper</a
                 >
                 <a
-                  class="btn btn-secondary"
-                  href="assets/demo_video/demo_video_mvsgs.mp4"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  class="btn btn-secondary demo-link"
+                  href="demo.html?v=mvsgs"
                   >Demo video</a
                 >
               </div>
-              <video class="pub-demo" controls preload="metadata">
-                <source src="assets/demo_video/demo_video_mvsgs.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
             </div>
           </article>
 
           <article class="pub-card">
-            <img
-              class="pub-thumb"
-              src="assets/img/ijcai-thumbnail.png"
-              alt="Online 3D Gaussian Splatting paper thumbnail"
-            />
+            <button
+              class="pub-thumb-btn"
+              type="button"
+              data-full="assets/img/ijcai-thumbnail.png"
+              data-alt="Online 3D Gaussian Splatting paper thumbnail"
+              data-cap="Online 3D Gaussian Splatting Modeling with Novel View Selection"
+            >
+              <img
+                class="pub-thumb"
+                src="assets/img/ijcai-thumbnail.png"
+                alt="Online 3D Gaussian Splatting paper thumbnail"
+              />
+            </button>
             <div class="pub-main">
               <div class="pub-meta">
                 <span class="chip">Conference</span>
                 <span class="pub-venue">IJCAI</span>
                 <span class="pub-year">2025</span>
+                <span class="role-badge">First Author</span>
               </div>
               <h3>Online 3D Gaussian Splatting Modeling with Novel View Selection</h3>
               <p class="pub-authors">Authors: Byeong Gwon Lee, et al.</p>
@@ -125,7 +137,7 @@
                   href="https://arxiv.org/abs/2508.14014"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >arXiv</a
+                  >Paper</a
                 >
                 <a
                   class="btn btn-secondary"
@@ -142,37 +154,40 @@
                   >Presentation</a
                 >
                 <a
-                  class="btn btn-secondary"
-                  href="assets/demo_video/demo_video_ijcai.mp4"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  class="btn btn-secondary demo-link"
+                  href="demo.html?v=ijcai"
                   >Demo video</a
                 >
               </div>
-              <video class="pub-demo" controls preload="metadata">
-                <source src="assets/demo_video/demo_video_ijcai.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
             </div>
           </article>
 
           <article class="pub-card">
-            <img
-              class="pub-thumb"
-              src="assets/img/stereo-gs-thumbnail.png"
-              alt="Stereo-GS paper thumbnail"
-            />
+            <button
+              class="pub-thumb-btn"
+              type="button"
+              data-full="assets/img/stereo-gs-thumbnail.png"
+              data-alt="Stereo-GS paper thumbnail"
+              data-cap="Stereo-GS: Online 3D Gaussian Splatting Mapping Using Stereo Depth Estimation"
+            >
+              <img
+                class="pub-thumb"
+                src="assets/img/stereo-gs-thumbnail.png"
+                alt="Stereo-GS paper thumbnail"
+              />
+            </button>
             <div class="pub-main">
               <div class="pub-meta">
                 <span class="chip">Journal</span>
                 <span class="pub-venue">MDPI Electronics</span>
                 <span class="pub-year">2025</span>
+                <span class="role-badge">Co-first Author</span>
               </div>
               <h3>
                 Stereo-GS: Online 3D Gaussian Splatting Mapping Using Stereo Depth
                 Estimation
               </h3>
-              <p class="pub-authors">Authors: Byeong Gwon Lee, et al.</p>
+              <p class="pub-authors">Authors: Jun kyu Park, Byeong Gwon Lee, et al.</p>
               <p class="pub-summary">
                 Stereo depth integration for improved mapping stability and detail
                 consistency.
@@ -190,16 +205,25 @@
           </article>
 
           <article class="pub-card">
-            <img
-              class="pub-thumb"
-              src="assets/img/M2depth_thumbnail.png"
-              alt="M2Depth paper thumbnail"
-            />
+            <button
+              class="pub-thumb-btn"
+              type="button"
+              data-full="assets/img/M2depth_thumbnail.png"
+              data-alt="M2Depth paper thumbnail"
+              data-cap="M2Depth: Unifying Monocular Depth Foundation Priors with Multi-View Stereo"
+            >
+              <img
+                class="pub-thumb"
+                src="assets/img/M2depth_thumbnail.png"
+                alt="M2Depth paper thumbnail"
+              />
+            </button>
             <div class="pub-main">
               <div class="pub-meta">
                 <span class="chip">Submission</span>
                 <span class="pub-venue">CVPR (under review)</span>
-                <span class="pub-year">2025</span>
+                <span class="pub-year">2026</span>
+                <span class="role-badge">First Author</span>
               </div>
               <h3>
                 M2Depth: Unifying Monocular Depth Foundation Priors with
@@ -216,7 +240,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="contact">
         <div class="section-header">
           <h2>Author Profiles</h2>
           <p class="section-subtitle">External profiles and contact channels.</p>
@@ -243,12 +267,76 @@
       </section>
     </main>
 
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close></div>
+      <figure
+        class="lightbox-content"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image preview"
+      >
+        <button class="lightbox-close" type="button" aria-label="Close" data-close>×</button>
+        <img id="lightbox-img" alt="" />
+        <figcaption id="lightbox-cap"></figcaption>
+      </figure>
+    </div>
+
     <footer class="site">
       © <span id="y"></span> Byeong Gwon Lee · Hosted on GitHub Pages
     </footer>
 
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
+
+      (function () {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const lightboxCap = document.getElementById("lightbox-cap");
+        const thumbButtons = document.querySelectorAll(".pub-thumb-btn");
+        const closeTargets = document.querySelectorAll("[data-close]");
+        const closeButton = lightbox.querySelector(".lightbox-close");
+        let lastTrigger = null;
+        let prevOverflow = "";
+
+        function openLightbox(trigger) {
+          const full = trigger.getAttribute("data-full");
+          const alt = trigger.getAttribute("data-alt") || "Publication image";
+          const cap = trigger.getAttribute("data-cap") || "";
+          if (!full) return;
+
+          lastTrigger = trigger;
+          prevOverflow = document.body.style.overflow;
+          lightboxImg.src = full;
+          lightboxImg.alt = alt;
+          lightboxCap.textContent = cap;
+          lightbox.classList.add("is-open");
+          lightbox.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+          closeButton.focus();
+        }
+
+        function closeLightbox() {
+          if (!lightbox.classList.contains("is-open")) return;
+          lightbox.classList.remove("is-open");
+          lightbox.setAttribute("aria-hidden", "true");
+          lightboxImg.removeAttribute("src");
+          lightboxCap.textContent = "";
+          document.body.style.overflow = prevOverflow;
+          if (lastTrigger) lastTrigger.focus();
+        }
+
+        thumbButtons.forEach((btn) => {
+          btn.addEventListener("click", () => openLightbox(btn));
+        });
+
+        closeTargets.forEach((el) => {
+          el.addEventListener("click", closeLightbox);
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeLightbox();
+        });
+      })();
     </script>
   </body>
 </html>
