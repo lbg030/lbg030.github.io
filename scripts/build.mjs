@@ -75,7 +75,6 @@ const outputs = {
     `${profile.name}, Researcher at KETI. ${profile.fields}.`,
     `${hero}${focus}${pipeline}<section id="publications">${sectionHead("02 / SELECTED PUBLICATIONS", "From ideas to published research.", link(["All publications", "publications.html"], "arrow-link"))}<h3 class="group-title">Published / Accepted</h3>${publications
       .filter((p) => p.status === "Published")
-      .slice(0, 2)
       .map((p) => publication(p, true))
       .join(
         "",
