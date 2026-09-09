@@ -1,0 +1,9 @@
+# GitHub Pages' default Jekyll build serves the pre-generated HTML.
+# Working instructions, source data, and verification artifacts are not public pages.
+exclude:
+  - prompt.md
+  - data
+  - scripts
+  - output
+  - README.md
+  - cv/README.txt

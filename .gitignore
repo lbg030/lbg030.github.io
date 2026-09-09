@@ -1,1 +1,6 @@
 .DS_Store
+.playwright-cli/
+output/playwright/
+output/pdf/
+# Local task instructions are not website content.
+prompt.md
