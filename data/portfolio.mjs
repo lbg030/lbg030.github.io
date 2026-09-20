@@ -120,18 +120,19 @@ export const publications = [
       "Bidirectional refinement between monocular depth foundation priors and multi-view stereo, combining learned structure with multi-view geometry.",
     links: [["arXiv", "https://arxiv.org/pdf/2608.20788"]],
   },
-  {
-    id: "m2slam",
-    title:
-      "M2SLAM: Coupling Multi-View Stereo with Monocular SLAM for Precise 3D Reconstruction",
-    venue: "IEEE Transactions on Robotics (T-RO)",
-    year: "2026",
-    status: "Under Review",
-    role: "First Author",
-    summary:
-      "Coupling monocular SLAM and multi-view stereo for dense 3D reconstruction and 3D Gaussian Splatting.",
-    links: [],
-  },
+  // Hidden from the public website and generated CV; uncomment to restore.
+  // {
+  //   id: "m2slam",
+  //   title:
+  //     "M2SLAM: Coupling Multi-View Stereo with Monocular SLAM for Precise 3D Reconstruction",
+  //   venue: "IEEE Transactions on Robotics (T-RO)",
+  //   year: "2026",
+  //   status: "Under Review",
+  //   role: "First Author",
+  //   summary:
+  //     "Coupling monocular SLAM and multi-view stereo for dense 3D reconstruction and 3D Gaussian Splatting.",
+  //   links: [],
+  // },
 ];
 export const projects = [
   {

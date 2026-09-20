@@ -30,7 +30,7 @@ for (const [file, content] of Object.entries(html)) {
     previousHeading = level;
   }
   assert(
-    !/M\.S\. Research Student|M2SLAM\.pdf|\/Users\/|Submission no\.|CONFIDENTIAL|TCSVT/.test(
+    !/M\.S\. Research Student|M2SLAM|M²(?:<br\s*\/?>|\s)*SLAM|T-RO|\bTRO\b|Transactions on Robotics|\/Users\/|Submission no\.|CONFIDENTIAL|TCSVT/i.test(
       content,
     ),
     `${file}: stale or private content`,
@@ -67,7 +67,7 @@ assert.deepEqual(
 );
 assert.equal(education[0].date, "Mar. 2024 – Feb. 2026");
 assert.equal(education[0].description, "Advisor: Prof. Soohwan Song");
-for (const id of ["m2depth", "m2slam"]) {
+for (const id of ["m2depth"]) {
   const p = publications.find((p) => p.id === id);
   assert.equal(p.status, "Under Review");
   assert.equal(p.role, "First Author");
@@ -76,7 +76,7 @@ for (const id of ["m2depth", "m2slam"]) {
       html["publications.html"].indexOf('id="under-review"'),
   );
 }
-assert.equal(publications.find((p) => p.id === "m2slam").links.length, 0);
+// assert.equal(publications.find((p) => p.id === "m2slam").links.length, 0);
 console.log(
   `Passed: ${pages.length} pages, ${localLinks} HTML local links/assets, anchors, heading order, nonempty image alternatives, required facts, publication separation, and public-content checks. External URLs, JS-loaded resources and description quality require separate verification.`,
 );

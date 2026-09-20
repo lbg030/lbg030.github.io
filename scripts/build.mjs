@@ -43,7 +43,7 @@ function page(file, title, description, body, extra = "") {
 }
 function publication(p, compact = false) {
   const review = p.status === "Under Review";
-  return `<article id="${p.id}" class="publication${review ? " review" : ""}${compact ? " compact" : ""}">${p.image ? `<a class="publication-image" href="assets/img/${p.image}" aria-label="View figure: ${esc(p.title)}">${image(p.image, `Research overview: ${p.title}`)}</a>` : `<div class="paper-index" aria-hidden="true">${p.id === "m2depth" ? "M²<br>Depth" : "M²<br>SLAM"}</div>`}<div class="publication-body"><div class="publication-meta"><span>${esc(p.venue)}${p.venue.includes(p.year) ? "" : ` · ${p.year}`}</span><span class="status ${review ? "status-review" : ""}">${p.status}</span></div><h3>${esc(p.title)}</h3><p class="author-role">${p.role}</p>${!compact && p.authors ? `<p class="authors">${esc(p.authors)}</p>` : ""}<p>${esc(p.summary)}</p>${p.links.length ? `<div class="text-links">${links(p.links)}</div>` : ""}</div></article>`;
+  return `<article id="${p.id}" class="publication${review ? " review" : ""}${compact ? " compact" : ""}">${p.image ? `<a class="publication-image" href="assets/img/${p.image}" aria-label="View figure: ${esc(p.title)}">${image(p.image, `Research overview: ${p.title}`)}</a>` : `<div class="paper-index" aria-hidden="true">${p.id === "m2depth" ? "M²<br>Depth" : esc(p.title.split(":")[0])}</div>`}<div class="publication-body"><div class="publication-meta"><span>${esc(p.venue)}${p.venue.includes(p.year) ? "" : ` · ${p.year}`}</span><span class="status ${review ? "status-review" : ""}">${p.status}</span></div><h3>${esc(p.title)}</h3><p class="author-role">${p.role}</p>${!compact && p.authors ? `<p class="authors">${esc(p.authors)}</p>` : ""}<p>${esc(p.summary)}</p>${p.links.length ? `<div class="text-links">${links(p.links)}</div>` : ""}</div></article>`;
 }
 function project(p, detail = false) {
   const heading = detail ? "h2" : "h3";
@@ -82,7 +82,7 @@ const outputs = {
       .filter((p) => p.status === "Under Review")
       .map(
         (p) =>
-          `<a href="publications.html#${p.id}"><strong>${p.id === "m2depth" ? "M2Depth" : "M2SLAM"}</strong><span>${esc(p.venue)}</span><span class="review-note">Under Review · First Author</span><span aria-hidden="true">↗</span></a>`,
+          `<a href="publications.html#${p.id}"><strong>${esc(p.title.split(":")[0])}</strong><span>${esc(p.venue)}</span><span class="review-note">Under Review · First Author</span><span aria-hidden="true">↗</span></a>`,
       )
       .join(
         "",
@@ -93,7 +93,7 @@ const outputs = {
     "publications.html",
     "Publications",
     "Published research and clearly identified manuscripts under review in 3D computer vision.",
-    `${pageHero("PUBLICATIONS", "Geometry. Depth. Discovery.", "Research in multi-view stereo, Gaussian Splatting, and dense 3D mapping.")}<div class="page-jumps"><a href="#published">Published / Accepted <span>03</span></a><a href="#under-review">Under Review <span>02</span></a></div><section id="published">${sectionHead("PUBLICATIONS", "Published / Accepted")}<div class="publication-list">${publications
+    `${pageHero("PUBLICATIONS", "Geometry. Depth. Discovery.", "Research in multi-view stereo, Gaussian Splatting, and dense 3D mapping.")}<div class="page-jumps"><a href="#published">Published / Accepted <span>03</span></a><a href="#under-review">Under Review <span>${String(publications.filter((p) => p.status === "Under Review").length).padStart(2, "0")}</span></a></div><section id="published">${sectionHead("PUBLICATIONS", "Published / Accepted")}<div class="publication-list">${publications
       .filter((p) => p.status === "Published")
       .map((p) => publication(p))
       .join(
